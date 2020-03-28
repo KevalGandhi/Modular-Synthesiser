@@ -29,6 +29,7 @@ oscAElement.appendChild(oscANode);
 
 var knobListener = function(knob, value) {
 	console.log(value);
+	oscA.frequency.value = value;
 }
 
 oscAKnob.addListener(knobListener);
